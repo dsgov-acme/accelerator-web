@@ -1,0 +1,22 @@
+net:
+  host: 'employer.accelerator.test'
+
+firebase:
+  project: "accelerator-dev"
+
+environmentJSON: {
+  authenticationConfiguration: {
+    firebaseConfiguration: {
+      firebase: {
+        apiKey: "AIzaSyCmLLOvLNRPqPjVlKA2Xn66A5RGTgycu4k",
+        authDomain: "accelerator-dev.firebaseapp.com",
+      },
+      providerFlow: 'redirect',
+      providerId: 'oidc.public',
+      tenantId: 'employer-portal-4lo9h',
+    },
+  },
+  httpConfiguration: {
+    baseUrl: 'http://api.accelerator.test',
+  },
+}

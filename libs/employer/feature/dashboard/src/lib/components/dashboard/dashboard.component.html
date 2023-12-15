@@ -1,0 +1,11 @@
+<nuverial-dashboard-cards-group>
+  <ng-container *ngFor="let card of cards$ | async; trackBy: trackByFn">
+    <nuverial-dashboard-card
+      [description]="card.description"
+      [icon]="card.icon"
+      [name]="card.name"
+      [route]="card.route"
+      [tags]="card.tags"
+    ></nuverial-dashboard-card>
+  </ng-container>
+</nuverial-dashboard-cards-group>

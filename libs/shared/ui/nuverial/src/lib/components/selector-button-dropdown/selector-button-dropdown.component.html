@@ -1,0 +1,20 @@
+<div class="container">
+  <nuverial-button
+    class="custom-bordered-button"
+    ariaLabel="buttonText"
+    [matMenuTriggerFor]="menu"
+    buttonStyle="outlined"
+    colorTheme="primary"
+    mat-flat-button
+    type="submit"
+  >
+    <b>{{buttonText}}</b> <nuverial-icon [iconName]="'arrow_drop_down'" [outlined]="true"></nuverial-icon
+  ></nuverial-button>
+</div>
+<span class="selector-button-dropdown-menu-wrapper">
+  <mat-menu class="selector-button-dropdown-menu" #menu="matMenu">
+    <button class="selector-button-dropdown-menuItem" *ngFor="let item of menuItems; trackBy: trackByFn" (click)="selectItem(item)" mat-menu-item type="submit">
+      {{ item.displayTextValue }}
+    </button>
+  </mat-menu>
+</span>

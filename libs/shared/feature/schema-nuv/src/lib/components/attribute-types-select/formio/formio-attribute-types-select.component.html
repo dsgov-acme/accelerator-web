@@ -1,0 +1,8 @@
+<ng-container *ngIf="gotSchemas">
+  <nuverial-select
+    [formControl]="formControl"
+    [selectedClearable]="true"
+    [selectOptions]="attributeTypes"
+    (searchInput)="handleSearchSchema($event)"
+  ></nuverial-select>
+</ng-container>

@@ -1,0 +1,28 @@
+environment: "dev"
+
+firebase:
+  project: "accelerator-dev"
+
+net:
+  host: "employer-dev.accelerator.dsgov.demo.nuvalence.io"
+
+environmentJSON: {
+  authenticationConfiguration: {
+    firebaseConfiguration: {
+      firebase: {
+        apiKey: "AIzaSyCmLLOvLNRPqPjVlKA2Xn66A5RGTgycu4k",
+        authDomain: "accelerator-dev.firebaseapp.com",
+      },
+      providerFlow: 'redirect',
+      providerId: 'oidc.public',
+      tenantId: 'employer-portal-4lo9h',
+    },
+    sessionExpiration: {
+      idleTimeSeconds: 1800,
+      sessionTimeSeconds: 64800,
+    },
+  },
+  httpConfiguration: {
+    baseUrl: "https://api-dev.accelerator.dsgov.demo.nuvalence.io",
+  },
+}
