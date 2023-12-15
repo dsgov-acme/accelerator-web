@@ -187,7 +187,7 @@ steps:
       - "-c"
       - |
         gcloud deploy releases create "$(echo ${REPO_NAME} | cut -d- -f2-)-agency-${SHORT_SHA}" \
-          --project=accelerator-services \
+          --project=accelerator-shared-0c2a \
           --region=us-east4 \
           --delivery-pipeline="${REPO_NAME}-agency" \
           --gcs-source-staging-dir=gs://accelerator-application-pipeline_clouddeploy/source \
@@ -203,7 +203,7 @@ steps:
       - "-c"
       - |
         gcloud deploy releases create "$(echo ${REPO_NAME} | cut -d- -f2-)-public-${SHORT_SHA}" \
-          --project=accelerator-services \
+          --project=accelerator-shared-0c2a \
           --region=us-east4 \
           --delivery-pipeline="${REPO_NAME}-public" \
           --gcs-source-staging-dir=gs://accelerator-application-pipeline_clouddeploy/source \
@@ -219,7 +219,7 @@ steps:
       - "-c"
       - |
         gcloud deploy releases create "$(echo ${REPO_NAME} | cut -d- -f2-)-employer-${SHORT_SHA}" \
-          --project=accelerator-services \
+          --project=accelerator-shared-0c2a \
           --region=us-east4 \
           --delivery-pipeline="${REPO_NAME}-employer" \
           --gcs-source-staging-dir=gs://accelerator-application-pipeline_clouddeploy/source \

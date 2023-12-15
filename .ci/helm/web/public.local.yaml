@@ -2,7 +2,7 @@ net:
   host: 'public.accelerator.test'
 
 firebase:
-  project: "accelerator-dev"
+  project: "accelerator-dev-b6f2"
 
 environmentJSON: {
   authenticationConfiguration: {
